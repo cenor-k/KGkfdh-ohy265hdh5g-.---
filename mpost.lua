@@ -9,7 +9,7 @@ pref = '{15ff00}[MP Post]{ffffff} - '
 prefXD = '{7f7f7f}[MP Post] -'
 
 function main()
-    sampAddChatMessage(pref.." Успешно запустился. Создал"..aut, -1)
+    sampAddChatMessage(pref.." Успеш555555555но запустился. Создал"..aut, -1)
     sampAddChatMessage(prefXD.." {c2c2c2}P.S Мозги ебите ему! "..autXD, -1)
     sampRegisterChatCommand('cmd', function() WinState[0] = not WinState[0] end)
     wait(-1)
