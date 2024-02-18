@@ -1,15 +1,17 @@
-script_name("post")
-script_version("1.2")
-
+script_name("mpost")
+script_version("1.3")
+ver = '1.3'
 local imgui = require 'mimgui'
 inicfg = require 'inicfg'
 aut = '{6196ff} Andrey_Pilov.'
 autXD = '{7f7f7f} @A.Pilov.'
 pref = '{15ff00}[MP Post]{ffffff} - '
 prefXD = '{7f7f7f}[MP Post] -'
-
+local encoding = require 'encoding'
+encoding.default = 'CP1251'
+u8 = encoding.UTF8
 function main()
-    sampAddChatMessage(pref.." Успеш555555555но запустился. Создал"..aut, -1)
+    sampAddChatMessage(pref.." Успешно запустился. Создал"..aut.." {ffffff}Версия: "..ver, -1)
     sampAddChatMessage(prefXD.." {c2c2c2}P.S Мозги ебите ему! "..autXD, -1)
     sampRegisterChatCommand('cmd', function() WinState[0] = not WinState[0] end)
     wait(-1)
