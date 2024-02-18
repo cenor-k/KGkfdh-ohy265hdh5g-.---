@@ -1,5 +1,5 @@
 script_name("post")
-script_version("1.0")
+script_version("1.1")
 
 local imgui = require 'mimgui'
 inicfg = require 'inicfg'
